@@ -40,8 +40,8 @@
 
 ## Installation
 
-1.  Just copy/paste the code above somewhere in your CSS file
-2.  Create your HTML according following rules
+1.  Just copy/paste the code above (regular or minified version) somewhere in your CSS file or download the regular (.css) or minified (.min.css) and link it in the header of your HTML file. 
+2.  Create your HTML according the following rules
 
 Rem: The names of the CSS classes have been choosen to allow a perfect compatibility with Bootstrap (you can mix both).
 
