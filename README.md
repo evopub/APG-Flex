@@ -15,50 +15,49 @@ New (v.2.0): Invert collapsing...
 
 /* APG-FLEX : v 2.0 (2020-02-11) - ©Philippe Gouillou (www.gouillou.com) - LGPL 3 */
 
-.acontainer 				{display:block; max-width:1170px; margin:0 auto!important} 
-.acolfinal 					{padding:.5rem} 
+.acontainer		{display:block;max-width:1170px;margin:0 auto!important}
+.acolfinal		{padding:.5rem}
 
-.arow 						{display:flex; margin:0; padding:0} 
+.arow 			{display:flex;margin:0;padding:0}
 
-.browxs,
-.brosm,
-.browmd,
+.browsm,
 .browlg,
-.browxl 					{display:flex;} 
+.browmd,
+.browxl 		{display:flex}
 
-@media(min-width:576px)		{.arowsm {display:flex} .browsm {display:block}} 
-@media(min-width:768px)		{.arowmd {display:flex} .browmd {display:block}} 
-@media(min-width:992px)		{.arowlg {display:flex} .browlg {display:block}} 
-@media(min-width:1200px)	{.arowxl {display:flex} .browxl {display:block}} 
+@media(min-width:576px) 	{.arowsm{display:flex}.browsm{display:block}}
+@media(min-width:768px) 	{.arowmd{display:flex}.browmd{display:block}}
+@media(min-width:992px) 	{.arowlg{display:flex}.browlg{display:block}}
+@media(min-width:1200px)	{.arowxl{display:flex}.browxl{display:block}}
 
-.arosm>div,
-.arowmd>div,
+.arow>div,
+.arowsm>div,
 .arowlg>div,
-.arowsl>div,
-.browxs>div,
-.brosm>div,
-.browmd>div,
+.arowmd>div,
+.arowxl>div,
+.browsm>div,
 .browlg>div,
-.browxl>div 				{flex:1} 
+.browmd>div,
+.browxl>div	    {flex:1}
 
-.flex2 						{flex:2!important} 
-.flex3 						{flex:3!important} 
-.flex4 						{flex:4!important} 
-.flex5 						{flex:5!important} 
-.flex6 						{flex:6!important} 
-.flex7 						{flex:7!important} 
-.flex8 						{flex:8!important} 
-.flex9 						{flex:9!important} 
-.flex10						{flex:10!important} 
-.flex11						{flex:11!important}
-.flex12						{flex:12!important} 
+.flex2 			{flex:2!important}
+.flex3 			{flex:3!important}
+.flex4 			{flex:4!important}
+.flex5 			{flex:5!important}
+.flex6 			{flex:6!important}
+.flex7 			{flex:7!important}
+.flex8 			{flex:8!important}
+.flex9 			{flex:9!important}
+.flex10 		{flex:10!important}
+.flex11 		{flex:11!important}
+.flex12 		{flex:12!important}
 
 ``` 
 
 ### Minified Code (838 Bytes) 
 
 ```css  
-.acontainer{display:block;max-width:1170px;margin:0 auto !important}.arow{display:flex;margin:0;padding:0}.acolfinal{padding:.5rem}@media(min-width:576px){.arowsm{display:flex}}@media(min-width:768px){.arowmd{display:flex}}@media(min-width:992px){.arowlg{display:flex}}@media(min-width:1200px){.arowxl{display:flex}}.arow>div,.arowsm>div,.arowmd>div,.arowlg>div,.arowxl>div{flex:1}.flex2{flex:2 !important}.flex3{flex:3 !important}.flex4{flex:4 !important}.flex5{flex:5 !important}.flex6{flex:6 !important}.flex7{flex:7 !important}.flex8{flex:8 !important}.flex9{flex:9 !important}.flex10{flex:10 !important}.flex11{flex:11 !important}.flex12{flex:12 !important}  
+.acontainer{display:block;max-width:1170px;margin:0 auto!important}.acolfinal{padding:.5rem}.arow{display:flex;margin:0;padding:0}.browlg,.browmd,.browsm,.browxl{display:flex}@media(min-width:576px){.arowsm{display:flex}.browsm{display:block}}@media(min-width:768px){.arowmd{display:flex}.browmd{display:block}}@media(min-width:992px){.arowlg{display:flex}.browlg{display:block}}@media(min-width:1200px){.arowxl{display:flex}.browxl{display:block}}.arow>div,.arowlg>div,.arowmd>div,.arowsm>div,.arowxl>div,.browlg>div,.browmd>div,.browsm>div,.browxl>div{flex:1}.flex2{flex:2!important}.flex3{flex:3!important}.flex4{flex:4!important}.flex5{flex:5!important}.flex6{flex:6!important}.flex7{flex:7!important}.flex8{flex:8!important}.flex9{flex:9!important}.flex10{flex:10!important}.flex11{flex:11!important}.flex12{flex:12!important}  
 ``` 
 
 ## Installation 
