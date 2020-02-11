@@ -1,9 +1,11 @@
 # APG-FLEX 
 
-Only 662 Bytes to create a responsive Flex Layout: [check the Demo](http://gouillou.com/scripts/apg-flex-demo.html) and get the [snippets for VSCode](http://gouillou.com/scripts/apg-flex-snippets.html)! 
+Only 838 Bytes to create a complete responsive Flex Layout: [check the Demo](http://gouillou.com/scripts/apg-flex-demo.html) and get the [snippets for VSCode](http://gouillou.com/scripts/apg-flex-snippets.html)!  
+New (v.2.0): Invert collapsing...
 
 ## Versions 
 
+- v.2.0 (11 february 2020): Addition of "Invert Collapse" (Total: 838 Bytes)  
 - v.1.1 (1 february 2020): Addition of `.acolfinal` (Total: 662 Bytes)  
 - v.1.0 (2 november 2019): First public version (637 Bytes) 
 
@@ -11,38 +13,49 @@ Only 662 Bytes to create a responsive Flex Layout: [check the Demo](http://goui
 
 ```css 
 
-	/*APG-FLEX : v1.1 (2020-02-01) - ©Philippe Gouillou (www.gouillou.com) - LGPL 3*/ 
+/* APG-FLEX : v 2.0 (2020-02-11) - ©Philippe Gouillou (www.gouillou.com) - LGPL 3 */
 
-.acontainer 			{display: block; max-width: 1170px; margin: 0 auto !important;}  
-.arow 				{display: flex; margin: 0; padding: 0;}  
-.acolfinal			{padding:.5rem;} 
+.acontainer 				{display:block; max-width:1170px; margin:0 auto!important} 
+.acolfinal 					{padding:.5rem} 
 
-@media(min-width: 576px)	{.arowsm{display: flex}}  
-@media(min-width: 768px)	{.arowmd{display: flex}}  
-@media(min-width: 992px)	{.arowlg{display: flex}}  
-@media(min-width: 1200px)	{.arowxl{display: flex}} 
+.arow 						{display:flex; margin:0; padding:0} 
 
-.arow>div,  
-.arowsm>div,  
-.arowmd>div,  
-.arowlg>div,  
-.arowxl>div 			{flex:1} 
+.browxs,
+.brosm,
+.browmd,
+.browlg,
+.browxl 					{display:flex;} 
 
-.flex2 				{flex:2 !important}  
-.flex3 				{flex:3 !important}  
-.flex4 				{flex:4 !important}  
-.flex5 				{flex:5 !important}  
-.flex6 				{flex:6 !important}  
-.flex7 				{flex:7 !important}  
-.flex8 				{flex:8 !important}  
-.flex9 				{flex:9 !important}  
-.flex10 			{flex:10 !important}  
-.flex11 			{flex:11 !important}  
-.flex12 			{flex:12 !important} 
+@media(min-width:576px)		{.arowsm {display:flex} .browsm {display:block}} 
+@media(min-width:768px)		{.arowmd {display:flex} .browmd {display:block}} 
+@media(min-width:992px)		{.arowlg {display:flex} .browlg {display:block}} 
+@media(min-width:1200px)	{.arowxl {display:flex} .browxl {display:block}} 
+
+.arosm>div,
+.arowmd>div,
+.arowlg>div,
+.arowsl>div,
+.browxs>div,
+.brosm>div,
+.browmd>div,
+.browlg>div,
+.browxl>div 				{flex:1} 
+
+.flex2 						{flex:2!important} 
+.flex3 						{flex:3!important} 
+.flex4 						{flex:4!important} 
+.flex5 						{flex:5!important} 
+.flex6 						{flex:6!important} 
+.flex7 						{flex:7!important} 
+.flex8 						{flex:8!important} 
+.flex9 						{flex:9!important} 
+.flex10						{flex:10!important} 
+.flex11						{flex:11!important}
+.flex12						{flex:12!important} 
 
 ``` 
 
-### Minified Code (662 Bytes) 
+### Minified Code (838 Bytes) 
 
 ```css  
 .acontainer{display:block;max-width:1170px;margin:0 auto !important}.arow{display:flex;margin:0;padding:0}.acolfinal{padding:.5rem}@media(min-width:576px){.arowsm{display:flex}}@media(min-width:768px){.arowmd{display:flex}}@media(min-width:992px){.arowlg{display:flex}}@media(min-width:1200px){.arowxl{display:flex}}.arow>div,.arowsm>div,.arowmd>div,.arowlg>div,.arowxl>div{flex:1}.flex2{flex:2 !important}.flex3{flex:3 !important}.flex4{flex:4 !important}.flex5{flex:5 !important}.flex6{flex:6 !important}.flex7{flex:7 !important}.flex8{flex:8 !important}.flex9{flex:9 !important}.flex10{flex:10 !important}.flex11{flex:11 !important}.flex12{flex:12 !important}  
@@ -59,21 +72,28 @@ Rem: The names of the CSS classes have been choosen to allow a perfect compatibi
 
 **Beware: it works the opposite of Bootstrap: you modify the row, not the column!** 
 
-1. For each row: indicate at which limit you want the columns to collapse. A row is created by a div with one of the followings classes (example : `<div class="arow">`) :  
-	- `arow`: never collapses  
-	- `arowsm`: collapses under 576px  
-	- `arowmd`: collapses under 768px  
-	- `arowlg`: collapses under 992px  
-	- `arowxl`: collapses under 1200px  
+1. For each row: indicate at which limit you want the columns to collapse or expand. A row is created by a div with one of the followings classes (example : `<div class="arow">`) : 
+	1. Collapse (usual behavior): 
+		- `arow`: never collapses  
+		- `arowsm`: collapses under 576px  
+		- `arowmd`: collapses under 768px  
+		- `arowlg`: collapses under 992px  
+		- `arowxl`: collapses under 1200px  
+	2. Invert Collapse (opposite behavior): 
+		- `browsm`: collapses *over* 576px  
+		- `browmd`: collapses *over* 768px  
+		- `browlg`: collapses *over* 992px  
+		- `browxl`: collapses *over* 1200px  
+  
 2. Inside the row, add one `<div>` per column (as much as you want: they will be evenly distributed) 
 
-3. If needed, add to the column div one of the classes `flex2` to `flex12` to define its respective size (default = `flex1`; example `<div class="flex2">`) 
+3. If needed, add to the column div one of the classes `flex2` to `flex12` to define its size (default = `flex1`; example `<div class="flex2">`) 
 
 ### Notes 
 
-1. For Container (*max\-width: 1070px and centered*), add the class "`acontainer`" to a row (ex: `<div class="arow acontainer">`) 
+1. For Container (*max width: 1070px and centered*), add the class "`acontainer`" to a row (ex: `<div class="arow acontainer">`) 
 
-2. A `div` is considered as a Flex Column *if and only if* it is directly under a `arowXX`. You can change this behavior by using style (`<div style="display: block;">`):  
+2. A `div` is considered as a Flex Column *if and only if* it is directly under a `arowXX` or a `browXX`. You can change this behavior by using style (`<div style="display: block;">`):  
 	- `arow` : row  
 		- `div` : displayed as Flex (column)  
 			- `div` : displayed as Block (default behavior)  
