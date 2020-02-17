@@ -1,11 +1,12 @@
 # APG-FLEX 
 
 Only 838 Bytes to create a complete responsive Flex Layout: [check the Demo](http://gouillou.com/scripts/apg-flex-demo.html) and get the [snippets for VSCode](http://gouillou.com/scripts/apg-flex-snippets.html)!  
-New (v.2.0): Invert collapsing...
+New (v.2.0): Inverted collapsing...
 
 ## Versions 
 
-- v.2.0 (11 february 2020): Addition of "Invert Collapse" (Total: 838 Bytes)  
+- v.2.1 (17 february 2020): Optimisation (Total: 831 Bytes)  
+- v.2.0 (11 february 2020): Addition of "Inverted Collapse" (Total: 838 Bytes)  
 - v.1.1 (1 february 2020): Addition of `.acolfinal` (Total: 662 Bytes)  
 - v.1.0 (2 november 2019): First public version (637 Bytes) 
 
@@ -13,7 +14,7 @@ New (v.2.0): Invert collapsing...
 
 ```css 
 
-/* APG-FLEX : v 2.0 (2020-02-11) - ©Philippe Gouillou (www.gouillou.com) - LGPL 3 */
+/* APG-FLEX : v 2.1 (2020-02-17) - ©Philippe Gouillou (www.gouillou.com) - LGPL 3 */
 
 .acontainer		{display:block;max-width:1170px;margin:0 auto!important}
 .acolfinal		{padding:.5rem}
@@ -57,7 +58,7 @@ New (v.2.0): Invert collapsing...
 ### Minified Code (838 Bytes) 
 
 ```css  
-.acontainer{display:block;max-width:1170px;margin:0 auto!important}.acolfinal{padding:.5rem}.arow{display:flex;margin:0;padding:0}.browlg,.browmd,.browsm,.browxl{display:flex}@media(min-width:576px){.arowsm{display:flex}.browsm{display:block}}@media(min-width:768px){.arowmd{display:flex}.browmd{display:block}}@media(min-width:992px){.arowlg{display:flex}.browlg{display:block}}@media(min-width:1200px){.arowxl{display:flex}.browxl{display:block}}.arow>div,.arowlg>div,.arowmd>div,.arowsm>div,.arowxl>div,.browlg>div,.browmd>div,.browsm>div,.browxl>div{flex:1}.flex2{flex:2!important}.flex3{flex:3!important}.flex4{flex:4!important}.flex5{flex:5!important}.flex6{flex:6!important}.flex7{flex:7!important}.flex8{flex:8!important}.flex9{flex:9!important}.flex10{flex:10!important}.flex11{flex:11!important}.flex12{flex:12!important}  
+.acontainer{display:block;max-width:1170px;margin:0 auto!important}.acolfinal{padding:.5rem}.arow{display:flex;margin:0;padding:0}.browlg,.browmd,.browsm,.browxl{display:flex}@media(min-width:576px){.arowsm{display:flex}.browsm{display:block}}@media(min-width:768px){.arowmd{display:flex}.browmd{display:block}}@media(min-width:992px){.arowlg{display:flex}.browlg{display:block}}@media(min-width:1200px){.arowxl{display:flex}.browxl{display:block}}.arow>div,.arowlg>div,.arowmd>div,.arowsm>div,.arowxl>div,.browlg>div,.browmd>div,.browsm>div,.browxl>div{flex:1}.flex2{flex:2!important}.flex3{flex:3!important}.flex4{flex:4!important}.flex5{flex:5!important}.flex6{flex:6!important}.flex7{flex:7!important}.flex8{flex:8!important}.flex9{flex:9!important}.flex10{flex:10!important}.flex11{flex:11!important}.flex12{flex:12!important}
 ``` 
 
 ## Installation 
@@ -78,7 +79,7 @@ Rem: The names of the CSS classes have been choosen to allow a perfect compatibi
 		- `arowmd`: collapses under 768px  
 		- `arowlg`: collapses under 992px  
 		- `arowxl`: collapses under 1200px  
-	2. Invert Collapse (opposite behavior): 
+	2. Inverted Collapse (opposite behavior): 
 		- `browsm`: collapses *over* 576px  
 		- `browmd`: collapses *over* 768px  
 		- `browlg`: collapses *over* 992px  
