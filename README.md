@@ -1,12 +1,12 @@
 # APG-FLEX 
 
-Only 838 Bytes to create a complete responsive Flex Layout: [check the Demo](http://gouillou.com/scripts/apg-flex-demo.html) and get the [snippets for VSCode](http://gouillou.com/scripts/apg-flex-snippets.html)!  
-New (v.2.0): Inverted collapsing...
+Only 838 Bytes to create a complete responsive Flex Layout: [check the Demo](http://gouillou.com/scripts/apg-flex-demo.html) and get the [snippets for VSCode](http://gouillou.com/scripts/apg-flex-snippets.html) or play with it on [Codepen](https://codepen.io/evopub/pen/vYOgPpO)!  
+New (v.2.0): reverse collapsing...
 
 ## Versions 
 
 - v.2.1 (17 february 2020): Optimisation (Total: 831 Bytes)  
-- v.2.0 (11 february 2020): Addition of "Inverted Collapse" (Total: 838 Bytes)  
+- v.2.0 (11 february 2020): Addition of "reverse Collapse" (Total: 838 Bytes)  
 - v.1.1 (1 february 2020): Addition of `.acolfinal` (Total: 662 Bytes)  
 - v.1.0 (2 november 2019): First public version (637 Bytes) 
 
@@ -79,7 +79,7 @@ Rem: The names of the CSS classes have been choosen to allow a perfect compatibi
 		- `arowmd`: collapses under 768px  
 		- `arowlg`: collapses under 992px  
 		- `arowxl`: collapses under 1200px  
-	2. Inverted Collapse (opposite behavior): 
+	2. reverse Collapse (opposite behavior): 
 		- `browsm`: collapses *over* 576px  
 		- `browmd`: collapses *over* 768px  
 		- `browlg`: collapses *over* 992px  
